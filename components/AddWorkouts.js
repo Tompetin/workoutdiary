@@ -44,7 +44,7 @@ export default function AddWorkouts() {
     function addMessage() {
         let distance1 = Number(distances);
         let duration1 = Number(duration);
-        if (distance < 0 || duration < 0) {
+        if (distances < 0 || duration < 0) {
             Alert.alert('Error', 'Distance and duration must be greater or equal to zero');
             setDistance('');
             setDuration('');
