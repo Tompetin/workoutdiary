@@ -35,7 +35,6 @@ export default function WorkoutsView() {
                 data={workout}
                 renderItem={({ item }) => <Item workout={item} />}
             />
-
         </View>
     );//To get a value for DistanceContext you have to press the button once in settings
 }
@@ -46,7 +45,7 @@ function Item({ workout }) {
         <View style={Style.itemView}>
             <Text style={Style.itemText}>On {workout.date2}</Text>
             <Text style={Style.itemText}>Your workout is: {workout.value}<Icon color={'green'} source={workout.value} size={24} /> </Text>
-            <Text style={Style.itemText}>{workout.distance1}km</Text>
+            <Text style={Style.itemText}>{workout.distance1}{distance}</Text>
             <Text style={Style.itemText}>{workout.duration1}min</Text>
         </View>
     );
