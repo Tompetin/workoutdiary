@@ -40,6 +40,7 @@ export default function WorkoutsView() {
 }
 
 function Item({ workout }) {
+    const { distance } = useContext(DistanceContext);
     return (
 
         <View style={Style.itemView}>
